@@ -3,9 +3,25 @@
     padding: 0;
 }
 
+html {
+    background: url("../images/UncleSteveBackground.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 body {
     font-family: 'Acme', sans-serif;
+    background: url("../images/UncleSteveBackground.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+
+/* ------------------------------------- Navbar --------------------------- */
 
 .navbar {
     background-color: #7DB8DC !important;
@@ -30,4 +46,197 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+/* ---------------------------------- Welcome page -------------------------------------- */
+
+.welcome {
+    /* background-image: url("../images/UncleSteveBackground.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 90vh;
+    width: 100%;
+}
+
+.welcome h1 {
+    font-size: 50px;
+    color: #1e587c;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+@media screen and (max-width:576px) {
+    .welcome img {
+        width: 70%;
+    }
+    .welcome h1 {
+        font-size: 40px;
+    }
+}
+
+
+/* ------------------------------- Welcome text ---------------------------------- */
+
+.welcome-text {
+    /* background-image: url("../images/UncleSteveBackground.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* height: auto;
+    width: 100%; */
+}
+
+.welcome-text p {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #0c2f44;
+    line-height: 2;
+    text-align: justify;
+}
+
+@media screen and (max-width:576px) {
+    .welcome-text img {
+        width: 50%;
+    }
+    .welcome-text p {
+        font-size: 18px;
+    }
+}
+
+.collection {
+    /* background-image: url("../images/UncleSteveBackground.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* height: auto;
+    width: 100%; */
+}
+
+.collection {
+    margin-top: 10%;
+}
+
+.collection h1 {
+    font-size: 50px;
+    color: #1e587c;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.collection .square {
+    height: 150px;
+    /* background-color: teal; */
+}
+
+.collection .square img {
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+}
+
+
+/* ------------------------------------ Road map ----------------------------- */
+
+.roadmap {
+    margin-top: 10%;
+}
+
+.roadmap h2 {
+    font-size: 50px;
+    color: #1e587c;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.roadmap h3 {
+    font-size: 40px;
+    color: #1e587c;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.roadmap h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+@media screen and (max-width:576px) {
+    .roadmap h4 {
+        font-size: 14px;
+    }
+    .roadmap p {
+        font-size: 12px;
+        width: 70px;
+    }
+}
+
+
+/* -------------------------- Phase 2 of roadmap -------------------------- */
+
+.phase2 {
+    margin-top: 10%;
+}
+
+.phase2 h2 {
+    font-size: 50px;
+    color: #1e587c;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.phase2 h3 {
+    font-size: 30px;
+    color: #1e587c;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+@media screen and (max-width:576px) {
+    .phase2 img {
+        width: 50%;
+    }
+}
+
+
+/* ----------------------------- Steveopedia ------------------------------- */
+
+.steveopedia {
+    margin-top: 10%;
+}
+
+.steveopedia h2 {
+    font-size: 50px;
+    color: #1e587c;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.steveopedia h3 {
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+    color: #0b2b3f;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.steveopedia .btn {
+    text-transform: uppercase;
+    background-color: #1e587c;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+
+@media screen and (max-width:576px) {
+    .steveopedia h3 {
+        width: 100%;
+    }
+    .steveopedia img {
+        width: 70%;
+    }
 }

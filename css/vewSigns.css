@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url("../images/UncleSteveBackground.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+    font-family: 'Acme', sans-serif;
+    background: url("../images/UncleSteveBackground.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* ------------------------------------- Navbar --------------------------- */
+
+.navbar {
+    background-color: #7DB8DC !important;
+}
+
+.navbar .nav-item {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.navbar .nav-link {
+    color: rgb(53, 53, 53) !important;
+}
+
+.navbar .connect {
+    width: 150px;
+    background-color: #1e587c;
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ----------------------------- Steveopedia ------------------------------- */
+
+.steveopedia h2 {
+    font-size: 50px;
+    color: #1e587c;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.steveopedia h3 {
+    font-size: 30px;
+    color: #1e587c;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.steveopedia p {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #123449;
+}
+
+@media screen and (max-width:576px) {
+    .steveopedia h3 {
+        width: 100%;
+    }
+    .steveopedia img {
+        width: 70%;
+    }
+}
