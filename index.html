@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Home</title>
@@ -15,9 +17,9 @@
 
 <body>
     <!-- ------------------------------------- Navbar Starts ------------------------------------ -->
-    <nav class="navbar navbar-expand-lg navbar-light py-0">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-0">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="images/Header Logo.png" width="200px" alt="" srcset="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,19 +29,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Mint</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Road Map</a>
+                        <a class="nav-link" href="#roadmap">Road Map</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Steveopedia</a>
+                        <a class="nav-link" href="#steveopedia">Steveopedia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" href="#faq">FAQ</a>
                     </li>
                 </ul>
                 <a class="btn btn-primary connect" href="#">Connect</a>
@@ -71,7 +73,7 @@
     </nav>
 
     <!-- ------------------------------- Welcome Screen --------------------------------------- -->
-    <div class="welcome d-flex justify-content-center align-items-center text-center">
+    <div class="welcome d-flex justify-content-center align-items-center text-center" id="home">
         <div class="content container">
             <img src="images/Logo.png" width="40%" alt="" srcset="">
             <h1>Welcome to the uncle steve club!</h1>
@@ -214,6 +216,7 @@
     </div>
 
     <!-- --------------------------------- Road map starts ------------------------------ -->
+    <div id="roadmap"></div>
     <div class="roadmap container text-center">
         <h2>Roadmap</h2>
         <h3>- Phase 1 -</h3>
@@ -264,12 +267,126 @@
     </div>
 
     <!-- ----------------------------- Steveopedia starts ------------------------------ -->
+    <div id="steveopedia"></div>
     <div class="steveopedia container text-center">
         <h2>The Steveopedia</h2>
         <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis soluta quia esse sed placeat dicta id blanditiis illum commodi quibusdam.</h3>
         <img src="images/SteveopediaImage1.png" width="40%" alt="" srcset="" class="my-5">
         <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ullam ipsum nulla obcaecati id, ipsam laudantium alias voluptas exercitationem corrupti.</h3>
         <a href="viewSigns.html" class="btn my-3">View your signs</a>
+    </div>
+
+    <!-- ----------------------------- The Team --------------------------- -->
+    <div class="team container text-center" id="team">
+        <h2>The Team</h2>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, corrupti!</h3>
+        <div class="row mt-5">
+            <div class="col-6 col-md-4 col-lg-3 mt-3">
+                <div class="col-12 member">
+                    <div class="image mb-2">
+                        <img src="images/7.png" width="100%" alt="" srcset="">
+                    </div>
+                    <h3>JD</h3>
+                    <h4>Project Manager / Artist</h4>
+                    <h5>Six feet tall</h5>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mt-3">
+                <div class="col-12 member">
+                    <div class="image mb-2">
+                        <img src="images/6.png" width="100%" alt="" srcset="">
+                    </div>
+                    <h3>Slosh</h3>
+                    <h4>Project Manager / Tech Lead</h4>
+                    <h5>Thinks he can code</h5>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mt-3">
+                <div class="col-12 member">
+                    <div class="image mb-2">
+                        <img src="images/5.png" width="100%" alt="" srcset="">
+                    </div>
+                    <h3>Leia</h3>
+                    <h4>Creative Director</h4>
+                    <h5>Sold her soul to etn</h5>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mt-3">
+                <div class="col-12 member">
+                    <div class="image mb-2">
+                        <img src="images/4.png" width="100%" alt="" srcset="">
+                    </div>
+                    <h3>Usama</h3>
+                    <h4>Developer</h4>
+                    <h5>The MVP</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------- FAQ --------------------------------- -->
+    <div id="faq"></div>
+    <div class="faq container">
+        <h2>FAQ</h2>
+        <div class="faqs-accordion my-5">
+            <div class="accordion" id="accordionExample">
+                <div class="card my-3">
+                    <div class="card-header d-flex align-items-center  pl-0 " id="headingOne">
+                        <button type="button" class="btn btn-link  pl-0" data-toggle="collapse" data-target="#collapseOne">Will there be a presale?  </button>
+                        <i class="fa fa-plus ml-auto" data-toggle="collapse" data-target="#collapseOne"></i>
+                    </div>
+                    <div id="collapseOne" class="collapse pl-0" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body ">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ipsam esse quae sapiente aut necessitatibus exercitationem deleniti ab inventore obcaecati!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-3">
+                    <div class="card-header d-flex align-items-center  pl-0 " id="headingTwo">
+                        <button type="button" class="btn btn-link  pl-0" data-toggle="collapse" data-target="#collapseTwo">Will there be a presale?  </button>
+                        <i class="fa fa-plus ml-auto" data-toggle="collapse" data-target="#collapseTwo"></i>
+                    </div>
+                    <div id="collapseTwo" class="collapse pl-0" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ipsam esse quae sapiente aut necessitatibus exercitationem deleniti ab inventore obcaecati!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-3">
+                    <div class="card-header d-flex align-items-center  pl-0 " id="headingThree">
+                        <button type="button" class="btn btn-link  pl-0" data-toggle="collapse" data-target="#collapseThree">Will there be a presale?  </button>
+                        <i class="fa fa-plus ml-auto" data-toggle="collapse" data-target="#collapseThree"></i>
+                    </div>
+                    <div id="collapseThree" class="collapse pl-0" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ipsam esse quae sapiente aut necessitatibus exercitationem deleniti ab inventore obcaecati!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-3">
+                    <div class="card-header d-flex align-items-center  pl-0 " id="headingThree">
+                        <button type="button" class="btn btn-link  pl-0" data-toggle="collapse" data-target="#collapseThree">Will there be a presale?  </button>
+                        <i class="fa fa-plus ml-auto" data-toggle="collapse" data-target="#collapseThree"></i>
+                    </div>
+                    <div id="collapseThree" class="collapse pl-0" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ipsam esse quae sapiente aut necessitatibus exercitationem deleniti ab inventore obcaecati!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card my-3">
+                    <div class="card-header d-flex align-items-center  pl-0 " id="headingThree">
+                        <button type="button" class="btn btn-link  pl-0" data-toggle="collapse" data-target="#collapseThree">Will there be a presale?  </button>
+                        <i class="fa fa-plus ml-auto" data-toggle="collapse" data-target="#collapseThree"></i>
+                    </div>
+                    <div id="collapseThree" class="collapse pl-0" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ipsam esse quae sapiente aut necessitatibus exercitationem deleniti ab inventore obcaecati!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -279,6 +396,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="js/index.js"></script>
+
 </body>
 
 </html>

@@ -4,11 +4,7 @@
 }
 
 html {
-    background: url("../images/UncleSteveBackground.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    scroll-behavior: smooth !important;
 }
 
 body {
@@ -238,5 +234,106 @@ body {
     }
     .steveopedia img {
         width: 70%;
+    }
+}
+
+
+/* ----------------------------------- The Team --------------------------------- */
+
+.team {
+    margin-top: 10%;
+    text-transform: uppercase;
+}
+
+.team h2 {
+    font-size: 50px;
+    color: #1e587c;
+    font-weight: 600;
+}
+
+.team h3 {
+    font-size: 20px;
+    color: #0b2b3f;
+    font-weight: 600;
+}
+
+.team .member .image img {
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+}
+
+.team .member h3 {
+    font-size: 30px;
+    color: #1e587c;
+}
+
+.team .member h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.team .member h5 {
+    font-size: 15px;
+}
+
+@media screen and (max-width:576px) {
+    .team .member h3 {
+        font-size: 24px;
+    }
+    .team .member .image img {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+
+/* ------------------------------------ FAQ --------------------------------- */
+
+.faq {
+    margin-top: 10%;
+    text-transform: uppercase;
+}
+
+.faq h2 {
+    font-size: 50px;
+    color: #1e587c;
+    font-weight: 600;
+    text-align: center;
+}
+
+.accordion .fa {
+    margin-right: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.accordion .card {
+    background-color: #1e587c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.accordion button {
+    margin-left: 20px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (max-width:576px) {
+    .accordion button {
+        font-size: 20px;
     }
 }
